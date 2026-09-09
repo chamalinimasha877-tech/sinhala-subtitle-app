@@ -14,7 +14,7 @@ if uploaded_file is not None and api_key:
         with st.spinner("Translating into conversational Sinhala... Please wait..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel('gemini-1.5-flash')
+                model = genai.GenerativeModel('gemini-2.0-flash')
                 
                 prompt = f"""
                 Translate the following English SRT subtitle content into natural, conversational, and spoken Sinhala (කතා කරන බසින් සිංහලට).
